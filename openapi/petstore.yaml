@@ -34,8 +34,8 @@ paths:
       tags:
         - pet
       summary: Add a new pet to the store
-      description: ''
       operationId: addPet
+      description: Adding a new pet.
       responses:
         '200':
           description: OK
@@ -581,7 +581,8 @@ components:
         application/xml:
           schema:
             $ref: '#/components/schemas/Pet'
-      description: Pet object that needs to be added to the store
+      description: 
+        $ref: /desc.md
       required: true
   securitySchemes:
     petstore_auth:
